@@ -1,325 +1,186 @@
-      #outlook a{padding:0;}
-      .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
-      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
-      body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
-      table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
-      img{-ms-interpolation-mode:bicubic;}
+<style type="text/css">
 
-      body{margin:0; padding:0;}
-      img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
-      table{border-collapse:collapse !important;}
-      body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+    /* Client-specific Styles */
+    #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+    body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;} 
+    /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */ 
+    .ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */  
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */ 
+    #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+    /* End reset */
+    
+    body {
+      font-family: helvetica;
+      -webkit-font-smoothing: antialiased;
+    }
 
-      #bodyCell{padding:20px;}
-      #templateContainer{width:600px;}
+    #templateContainer {
+      width: 540px;
+    }
 
-      body, #bodyTable{
-      background-color:#d85349;
+    #backgroundTable {
+      background-color: #f5f5f2;
+    }
+
+    table {
+      font-size: 16px;
+      padding: 0;
+      border-spacing: 0px;
+      background: white;
+    }
+
+    table.module {
+      border-bottom: 6px solid #1f262b;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img.button {
+      display: block;
+      -webkit-font-smoothing: antialiased;
+      margin-bottom: 1em;
+    }
+
+    td.width {
+      width: 540px
+    }
+
+    td.width table {
+      width: 100%;
+    }
+
+    img.spacer {
+      width: 100%;
+    }
+    img.fitted {
+      width: 100%;
+    }
+
+    #header {
+      background-color: #ffffff;
+    }
+
+    #logo {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+    #footer-module { 
+      background-color: #ffffff;
+    }
+
+    #footer {
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-family: helvetica;
+      font-weight: bold;
+      letter-spacing: -1px;
+      line-height: 1.2em;
+      font-size: 2em;
+      -webkit-font-smoothing:antialiased;
+      color: #1f262b;
+    }
+
+    p, li {
+      font-family: helvetica;
+      line-height: 1.4;
+      font-size: 1.1em;
+      padding: 0;
+      margin: 0;
+      color: #43494e;
+      font-weight: 300;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      border-top: 1px solid #cccccc;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    li {
+      border-bottom: 1px solid #cccccc;
+    }
+
+    li span {
+      display: block;
+      padding: 0.375em;
+      color: #ffffff;  
+      font-weight: bold;  
+    }
+
+    #social {
+      text-align: center;
+      padding: 2em 0 1.5em 0;
+      /*border-bottom: 6px solid #1f262b;*/
+    }
+
+    .social-buttons {
+      text-align: center;
+    }
+
+    #social img {
+      padding: 0 10px;
+    }
+
+    #sub-line {
+    }
+
+    #sub-line p {
+      color: #6b7c85;
+      font-family: helvetica;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 0.75em;
+    }
+
+    #sub-line a {
+      font-weight: bold;
+      color: #1f262b;
+    }
+
+    @media only screen and (max-device-width : 320px) {
+      td.width {
+        width: 100%;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+      #logo {
+        width: 100%
+      }
+      #footer {
+        width: 100%
       }
 
-      #bodyCell{
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+      body {
+        -webkit-font-smoothing:antialiased;
+      }
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      td.width {
+        width: 100%;
       }
 
-      #templateContainer{
+      #logo {
+        width: 100%
       }
 
-      h1{
-        color:#333 !important;
-        display:block;
-        font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        font-size:26px;
-        font-style:normal;
-        font-weight:bold;
-        line-height:100%;
-        letter-spacing:normal;
-        margin-right:0;
-        margin-bottom:40px;
-        margin-left:0;
-        text-align:center;
+      #footer{
+        width: 100%
       }
 
-      h2{
-        color:#404040 !important;
-        display:block;
-        font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        font-size:20px;
-        font-style:normal;
-        font-weight:bold;
-        line-height:100%;
-        letter-spacing:normal;
-        margin-top:0;
-        margin-right:0;
-        margin-bottom:10px;
-        margin-left:0;
-        text-align:left;
-      }
+    }
 
-      h3{
-        color:#333 !important;
-        display:block;
-        font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        font-size:16px;
-        
-        font-weight:bold;
-        line-height:100%;
-        letter-spacing:normal;
-        margin-top:0;
-        margin-right:0;
-        margin-bottom:10px;
-        margin-left:0;
-        text-align:left;
-      }
-
-      h4{
-        color:#808080 !important;
-        display:block;
-        font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        font-size:14px;
-        font-style:italic;
-        font-weight:normal;
-        line-height:100%;
-        letter-spacing:normal;
-        margin-top:0;
-        margin-right:0;
-        margin-bottom:10px;
-        margin-left:0;
-        text-align:left;
-      }
-
-      #templatePreheader{
-        background-color:#d85349;
-      }
-
-      .preheaderContent{
-        color:#fff;
-        font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        font-size:12px;
-        line-height:125%;
-        text-align:left;
-      }
-
-      .preheaderContent a:link, .preheaderContent a:visited, .preheaderContent a .yshortcuts {
-        color:#fff;
-        font-weight:normal;
-        text-decoration:underline;
-      }
-
-      .preview-text {
-        color: #d85349;
-        display: none;
-        font-size: 1px;
-        line-height: 1px;
-      }
-
-      #templateHeader{
-        background-color:#d85349;
-      }
-
-      .headerContent{
-        color:#505050;
-        font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        font-size:20px;
-        font-weight:bold;
-        line-height:100%;
-        padding-top:0;
-        padding-right:0;
-        padding-bottom:0;
-        padding-left:0;
-        text-align:left;
-        vertical-align:middle;
-      }
-
-      .headerContent a:link, .headerContent a:visited, .headerContent a .yshortcuts {
-        color:#EB4102;
-        font-weight:normal;
-        text-decoration:underline;
-      }
-
-      #headerImage{
-        height:auto;
-        max-width:600px;
-      }
-
-      #templateBody{
-        background-color:#fff;
-        border-bottom:1px solid #efefef;
-      }
-
-      .bodyContent{
-        color:#333;
-        font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        font-size:16px;
-        line-height:150%;
-        padding-top:20px;
-        padding-right:20px;
-        padding-bottom:20px;
-        padding-left:20px;
-        text-align:left;
-      }
-
-      .bodyContent a:link, .bodyContent a:visited, .bodyContent a .yshortcuts {
-        color:#EB4102;
-        font-weight:normal;
-        text-decoration:underline;
-      }
-
-      .bodyContent img{
-        display:inline;
-        height:auto;
-        max-width:560px;
-      }
-
-      .templateColumnContainer{max-width:190px;}
-
-      #templateColumns{
-        background-color:#fff;
-      }
-
-      .leftColumnContent{
-        color:#333;
-        font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        font-size:14px;
-        line-height:150%;
-        padding-top:20px;
-        padding-right:20px;
-        padding-bottom:20px;
-        padding-left:20px;
-        text-align:left;
-      }
-
-      .leftColumnContent a:link, .leftColumnContent a:visited, .leftColumnContent a .yshortcuts {
-        color:#EB4102;
-        font-weight:normal;
-        text-decoration:underline;
-      }
-
-      .columnImage {
-        margin-top: -40px;
-      }
-
-      .article {
-        border-bottom: 1px solid #efefef;
-      }
-
-      .rightColumnContent{
-        color:#505050;
-        font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        font-size:14px;
-        line-height:150%;
-        padding-top:0;
-        padding-right:20px;
-        padding-bottom:20px;
-        padding-left:20px;
-        text-align:left;
-      }
-
-      .rightColumnContent a:link, .rightColumnContent a:visited, .rightColumnContent a .yshortcuts {
-        color:#EB4102;
-        font-weight:normal;
-        text-decoration:underline;
-      }
-
-      .leftColumnContent img, .rightColumnContent img{
-        display:inline;
-        height:auto;
-        max-width:150px;
-        max-height: 150px;
-        vertical-align:text-top;
-      }
-
-      #templateFooter{
-        background-color:#fff;
-      }
-
-      .footerContent{
-        color:#808080;
-        font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        font-size:10px;
-        line-height:150%;
-        padding-top:20px;
-        padding-right:20px;
-        padding-bottom:20px;
-        padding-left:20px;
-        text-align:center;
-      }
-
-      .footerContent a:link, .footerContent a:visited, .footerContent a .yshortcuts, .footerContent a span {
-        color:#606060;
-        font-weight:normal;
-        text-decoration:underline;
-      }
-
-            @media only screen and (max-width: 480px){
-        body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} 
-                body{width:100% !important; min-width:100% !important;}
-
-        #bodyCell{padding:10px !important;}
-
-        #templateContainer{
-          max-width:600px !important;
-          width:100% !important;
-        }
-
-        h1{
-          font-size:24px !important;
-          line-height:100% !important;
-        }
-
-        h2{
-          font-size:20px !important;
-          line-height:100% !important;
-        }
-
-        h3{
-          font-size:18px !important;
-          line-height:100% !important;
-        }
-
-        h4{
-          font-size:16px !important;
-          line-height:100% !important;
-        }
-
-        #templatePreheader{display:none !important;}
-
-        #headerImage{
-          height:auto !important;
-          max-width:600px !important;
-          width:100% !important;
-        }
-
-        .headerContent{
-          font-size:20px !important;
-          line-height:125% !important;
-        }
-
-        .bodyContent{
-          font-size:18px !important;
-          line-height:125% !important;
-        }
-
-        .templateColumnContainer{display:block !important; width:100% !important;}
-
-        .columnImage{
-          height:auto !important;
-          max-width:480px !important;
-          width:100% !important;
-        }
-
-        .leftColumnContent{
-          font-size:16px !important;
-          line-height:125% !important;
-        }
-
-        .rightColumnContent{
-          font-size:16px !important;
-          line-height:125% !important;
-        }
-
-        .footerContent{
-          font-size:14px !important;
-          line-height:115% !important;
-        }
-
-        .footerContent a{display:block !important;}
-      }
+  </style>
